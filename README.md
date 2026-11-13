@@ -1,4 +1,4 @@
-# CS208 Full Stack Final Project
+# CS208 12.03 Lab
 
 ## Documentation
 
