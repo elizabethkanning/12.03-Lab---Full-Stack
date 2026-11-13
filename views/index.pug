@@ -2,25 +2,25 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title}!
   ol
   each val in todos
     li
-      span= val.task + ' - '
+      span.task= val.task + ' - '
       if val.completed > 0
-        span Completed
+        span.complete Completed
       else
-        span Not Completed
-      form(method='POST' action='/delete')
-        input(type='hidden', name='id', value=val.id)
-        button(type='submit') Delete
+        span.complete Not Completed
       form(method='POST' action='/edit')
         input(type='text', name='task', value=val.task.trim(), required)
         input(type='hidden', name='id', value=val.id)
-        button(type='submit') Update Description
+        button.update(type='submit') Update Description
       form(method='POST' action='/markComplete')
-          input(type='hidden', name='id', value=val.id)
-          button(type='submit') Mark Complete
+        input(type='hidden', name='id', value=val.id)
+        button.markComplete(type='submit') Mark Complete
+      form(method='POST' action='/delete')
+        input(type='hidden', name='id', value=val.id)
+        button.delete(type='submit') Delete
 
   hr
   h2 Add a new task

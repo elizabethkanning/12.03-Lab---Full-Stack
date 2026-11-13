@@ -6,3 +6,41 @@ body {
 a {
   color: #00B7FF;
 }
+
+li {
+  padding: 10px;
+}
+
+.task {
+  font-weight: bold;
+}
+
+.complete {
+  font-style: italic;
+  font-size: 12px;
+}
+
+button {
+  margin: 2px;
+  background-color: plum;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px lightgray;
+}
+
+.update {
+  background-color: lightblue;
+}
+
+.markComplete {
+  background-color: lightgreen;
+}
+
+.delete {
+  background-color: lightcoral;
+}
+
+
+
+

@@ -81,7 +81,7 @@ router.post('/markComplete', function (req, res, next) {
     }
 }); 
 
-//need to update the edit function
+
 router.post('/edit', function (req, res, next) {
     const { task, id } = req.body; 
     if (task.trim() === '') {
